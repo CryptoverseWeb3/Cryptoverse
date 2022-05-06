@@ -22,12 +22,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-<<<<<<< Updated upstream
       - run: npm install
       - run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: /cryptoverse
-=======
       #      - name: Use Node.js ${{ matrix.node-version }}
       #        uses: actions/setup-node@v2
       #        with:
@@ -37,7 +35,6 @@ jobs:
       - run: npm install && npm run build
       #        env:
       #          NEXT_PUBLIC_BASE_PATH: /cryptoverse
->>>>>>> Stashed changes
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
@@ -45,3 +42,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
+          
