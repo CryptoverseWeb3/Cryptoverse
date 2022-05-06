@@ -17,7 +17,7 @@ const Cryptocurrencies = ({simplified}) => {
     return (
         <>
             <div className={"search-crypto"}>
-                <Input placeholder={"Search Cryptocurrency"} onChange={(e) => setSearchTearm(e.target.value)}}/>
+                <Input placeholder={"Search Cryptocurrency"} onChange={(e) => setSearchTearm(e.target.value)}/>
             </div>
             <Row gutter={[32, 32]} className={"crypto-card-container"}>
                 {cryptos?.map((currency) => (
