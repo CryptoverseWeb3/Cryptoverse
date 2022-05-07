@@ -19,11 +19,11 @@ const Cryptocurrencies = ({simplified}) => {
         setCryptos(filteredData);
     }, [cryptosList, setSearchTerm])
 
-    if (isFetching) return "<Loadering />";
+    if (isFetching) return "loading...";
 
     return (
         <>
-            {!simplified} && (
+            {!simplified && (
             <div className={"search-crypto"}>
                 <Input placeholder={"Search Cryptocurrency"} onChange={(e) => setSearchTerm(e.target.value)}/>
             </div>
