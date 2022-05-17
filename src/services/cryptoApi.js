@@ -22,13 +22,13 @@ export const cryptoApi = createApi({
 
         }),
 
-        getCryptoHistory: builder.query({
-            query: ({coinId, timeperiod}) => creatRequest(`coin/${coinId}/history?timeperiod=${timeperiod}`)
-
-        })
+        // getCryptoHistory: builder.query({
+        //     query: ({coinId, timeperiod}) => creatRequest(`coin/${coinId}/history?timeperiod=${timeperiod}`)
+        //
+        // })
     })
 })
 
 export const {
-    useGetCryptosQuery, useGetCryptoDetailsQuery, useGetCryptoHistoryQuery
+    useGetCryptosQuery, useGetCryptoDetailsQuery
 } = cryptoApi;
