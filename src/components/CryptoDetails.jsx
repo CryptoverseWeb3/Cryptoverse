@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import HTMLReactParser from 'html-react-parser';
 import {useParams} from 'react-router-dom';
 import millify from 'millify';
-import {Col, Row, Typography, Select} from 'antd';
+import {Col, Row, Typography} from 'antd';
 import {MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCircleOutlined, StopOutlined, TrophyOutlined, CheckOutlined, NumberOutlined, ThunderboltOutlined} from '@ant-design/icons';
 
 import {useGetCryptoDetailsQuery} from '../services/cryptoApi';
@@ -11,18 +11,18 @@ import Loader from './Loader';
 // import LineChart from './LineChart';
 
 const {Title, Text} = Typography;
-const {Option} = Select;
+// const {Option} = Select;
 
 const CryptoDetails = () => {
     const {coinId} = useParams();
-    const [timeperiod, setTimeperiod] = useState('7d');
+    // const [timeperiod, setTimeperiod] = useState('7d');
     const {data, isFetching} = useGetCryptoDetailsQuery(coinId);
     // const {data: coinHistory} = useGetCryptoHistoryQuery({coinId, timeperiod});
     const cryptoDetails = data?.data?.coin;
 
     if (isFetching) return <Loader />;
 
-    const time = ['3h', '24h', '7d', '30d', '1y', '3m', '3y', '5y'];
+    // const time = ['3h', '24h', '7d', '30d', '1y', '3m', '3y', '5y'];
 
     const stats = [
         { title: 'Price to USD', value: `$ ${cryptoDetails?.price && millify(cryptoDetails?.price)}`, icon: <DollarCircleOutlined /> },
@@ -52,10 +52,10 @@ const CryptoDetails = () => {
                 </p>
             </Col>
 
-            <Select defaultValue={"7d"} className={"select-timeperiod"} placeholder={"Select Time Period"}
-                    onChange={(value) => setTimeperiod(value)}>
-                {time.map((date) => <Option key={date}>{date}</Option>)}
-            </Select>
+            {/*<Select defaultValue={"7d"} className={"select-timeperiod"} placeholder={"Select Time Period"}*/}
+            {/*        onChange={(value) => setTimeperiod(value)}>*/}
+            {/*    {time.map((date) => <Option key={date}>{date}</Option>)}*/}
+            {/*</Select>*/}
 
             {/*<LineChart coinHistory={coinHistory} currentPrice={millify(cryptoDetails?.price)} coinName={cryptoDetails?.name} />*/}
 
