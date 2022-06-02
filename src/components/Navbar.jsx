@@ -1,30 +1,38 @@
 import React, {useState, useEffect} from 'react';
-import {Button, Menu, Typography, Avatar} from 'antd';
+import {
+    // Button,
+    Menu, Typography, Avatar
+} from 'antd';
 import {Link} from 'react-router-dom';
-import {HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined, MenuOutlined} from "@ant-design/icons";
+import {
+    HomeOutlined,
+    // MoneyCollectOutlined,
+    BulbOutlined, FundOutlined,
+//     MenuOutlined
+} from "@ant-design/icons";
 
 import icon from '../images/cryptocurrency.png';
 
 const Navbar = () => {
-    const [activeMenu, setActiveMenu] = useState(true);
-    const [screenSize, setScreenSize] = useState(true);
+    // const [activeMenu, setActiveMenu] = useState(true);
+    // const [screenSize, setScreenSize] = useState(true);
 
-    useEffect(() => {
-        const handleResize = () => setScreenSize(window.innerWidth);
-        window.addEventListener('resize', handleResize)
+    // useEffect(() => {
+    //     const handleResize = () => setScreenSize(window.innerWidth);
+    //     window.addEventListener('resize', handleResize)
+    //
+    //     handleResize();
+    //
+    //     return () => window.removeEventListener('resize', handleResize);
+    // }, [])
 
-        handleResize();
-
-        return () => window.removeEventListener('resize', handleResize);
-    }, [])
-
-    useEffect(() => {
-        if (screenSize < 768) {
-            setActiveMenu(false);
-        } else {
-            setActiveMenu(true)
-        }
-    }, [screenSize])
+    // useEffect(() => {
+    //     if (screenSize < 768) {
+    //         setActiveMenu(false);
+    //     } else {
+    //         setActiveMenu(true)
+    //     }
+    // }, [screenSize])
 
     const items = [
         {
@@ -60,6 +68,16 @@ const Navbar = () => {
                 {/*    <MenuOutlined/>*/}
                 {/*</Button>*/}
             </div>
+
+            <div className='menu'>
+                <Menu theme={"dark"} mode="horizontal" defaultSelectedKeys='home'>
+                    {items.map((ele) => (
+                        <Menu.Item key={ele.key} icon={ele.icon}>{ele.label}</Menu.Item>
+                    ))}
+                </Menu>
+            </div>
+
+
             {/*{activeMenu && (*/}
             {/*    <Menu theme={"dark"}>*/}
             {/*        <Menu.Item icon={<HomeOutlined/>}>*/}
@@ -80,13 +98,7 @@ const Navbar = () => {
             {/*    </Menu>*/}
             {/*)}*/}
 
-            <div className='menu'>
-                <Menu theme={"dark"} mode="horizontal" defaultSelectedKeys='home' >
-                    {items.map((ele) => (
-                        <Menu.Item key={ele.key} icon={ele.icon} >{ele.label}</Menu.Item>
-                    ))}
-                </Menu>
-            </div>
+
         </div>
     )
 }
