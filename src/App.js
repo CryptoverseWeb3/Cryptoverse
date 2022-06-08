@@ -5,7 +5,7 @@ import {Layout, Typography, Space} from 'antd';
 import {Navbar, Exchanges, Homepage, Cryptocurrencies, CryptoDetails, News} from './components';
 import './App.css';
 
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Switch} from 'react-router-dom';
 
 
 const App = () => {
