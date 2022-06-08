@@ -34,15 +34,15 @@ jobs:
           REACT_APP_NEWS_RAPIDAPI_KEY: ${{ secrets.NEWS_RAPIDAPI_KEY }}
           REACT_APP_NEWS_API_URL: ${{ secrets.NEWS_API_URL }}
 
-      #      - name: Use Node.js ${{ matrix.node-version }}
-      #        uses: actions/setup-node@v2
-      #        with:
-      #          node-version: ${{ matrix.node-version }}
-      #          cache: 'npm'
+#            - name: Use Node.js ${{ matrix.node-version }}
+#              uses: actions/setup-node@v2
+#              with:
+#                node-version: ${{ matrix.node-version }}
+#                cache: 'npm'
 
-      - run: npm install && npm run build
-      #        env:
-      #          NEXT_PUBLIC_BASE_PATH: /cryptoverse
+#      - run: npm install && npm run build
+#              env:
+#                NEXT_PUBLIC_BASE_PATH: /cryptoverse
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
