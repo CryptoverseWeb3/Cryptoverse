@@ -26,7 +26,7 @@ const App = () => {
                 </Layout>
 
 
-                <div className={"footer"}>
+                <div className={"gradient-bg-footer"}>
                     <Typography.Title level={5} style={{color: 'white', textAlign: 'center'}}>
                         Cryptoverse <br/>
                         All rights reserved
