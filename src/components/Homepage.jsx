@@ -20,7 +20,6 @@ const Homepage = () => {
     return (
         <>
             <Title level={2} className={"heading"}>Global Crypto Stats</Title>
-
             <Row>
                 <Col span={12}><Statistic title={"Total Cryptocurrencies"} value={globalStats.total}/></Col>
                 <Col span={12}><Statistic title={"Total Exchanges"} value={millify(globalStats.totalExchanges)}/></Col>
@@ -39,7 +38,6 @@ const Homepage = () => {
                 <Title level={2} className={"home-title"}><Link to={"/news"}>Show more</Link></Title>
             </div>
             <News simplified/>
-
         </>
     )
 }
