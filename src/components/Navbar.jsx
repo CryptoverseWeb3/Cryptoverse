@@ -1,110 +1,44 @@
 import React from 'react';
 
-// {useState,
-// useEffect}
-
-import {
-    // Button,
-    Menu, Typography, Avatar
-} from 'antd';
+import {Menu, Typography, Avatar} from 'antd';
 import {Link} from 'react-router-dom';
-import {
-    HomeOutlined,
-    // MoneyCollectOutlined,
-    BulbOutlined, FundOutlined,
-//     MenuOutlined
-} from "@ant-design/icons";
+import {HomeOutlined, BulbOutlined, FundOutlined,} from "@ant-design/icons";
 
 import icon from '../images/cryptocurrency.png';
 
-const Navbar = () => {
-    // const [activeMenu, setActiveMenu] = useState(true);
-    // const [screenSize, setScreenSize] = useState(true);
-
-    // useEffect(() => {
-    //     const handleResize = () => setScreenSize(window.innerWidth);
-    //     window.addEventListener('resize', handleResize)
-    //
-    //     handleResize();
-    //
-    //     return () => window.removeEventListener('resize', handleResize);
-    // }, [])
-
-    // useEffect(() => {
-    //     if (screenSize < 768) {
-    //         setActiveMenu(false);
-    //     } else {
-    //         setActiveMenu(true)
-    //     }
-    // }, [screenSize])
-
-    const items = [
-        {
-            key: 'home',
-            icon: <HomeOutlined/>,
-            label: (<Link to='/'>Home</Link>),
-        },
-        {
-            key: 'cryptocurrencies',
-            icon: <FundOutlined/>,
-            label: (<Link to='/cryptocurrencies'>Cryptocurrencies</Link>),
-        },
-        // {
-        //     key: 'exchanges', // it became paid that's why
-        //     icon: <MoneyCollectOutlined />,
-        //     label: (<Link to='/exchanges'>Exchanges</Link>),
-        // },
-        {
-            key: 'news',
-            icon: <BulbOutlined/>,
-            label: (<Link to='/news'>News</Link>),
-        },
-    ]
-
+const NavbarItem = ({title, classProps}) => {
     return (
-        <div className={"nav-container"}>
-            <div className={"logo-container"}>
-                <Avatar src={icon} size={"large"}/>
-                <Typography.Title level={2} className="logo">
-                    <Link to={"/"}>Cryptoverse</Link>
-                </Typography.Title>
-                {/*<Button className={"menu-control-container"} onClick={() => setActiveMenu(!activeMenu)}>*/}
-                {/*    <MenuOutlined/>*/}
-                {/*</Button>*/}
-            </div>
-
-            <div className='menu'>
-                <Menu theme={"dark"} mode="horizontal" defaultSelectedKeys='home'>
-                    {items.map((ele) => (
-                        <Menu.Item key={ele.key} icon={ele.icon}>{ele.label}</Menu.Item>
-                    ))}
-                </Menu>
-            </div>
-
-
-            {/*{activeMenu && (*/}
-            {/*    <Menu theme={"dark"}>*/}
-            {/*        <Menu.Item icon={<HomeOutlined/>}>*/}
-            {/*            <Link to={"/"}>Home</Link>*/}
-            {/*        </Menu.Item>*/}
-
-            {/*        <Menu.Item icon={<FundOutlined/>}>*/}
-            {/*            <Link to={"/cryptocurrencies"}>Cryptocurrencies</Link>*/}
-            {/*        </Menu.Item>*/}
-
-            {/*        <Menu.Item icon={<MoneyCollectOutlined/>}>*/}
-            {/*            <Link to={"/exchanges"}>Exchanges</Link>*/}
-            {/*        </Menu.Item>*/}
-
-            {/*        <Menu.Item icon={<BulbOutlined/>}>*/}
-            {/*            <Link to={"/news"}>News</Link>*/}
-            {/*        </Menu.Item>*/}
-            {/*    </Menu>*/}
-            {/*)}*/}
-
-
-        </div>
+        <li className={`mx-4 cursor-pointer text-white ${classProps}`}>
+            {title}
+        </li>
     )
 }
+
+const Navbar = () => {
+    const [toggleMenu, setToggleMenu] = React.useState(false);
+    return (
+        <nav className={"w-full flex md:justify-center justify-between items-center p-4"}>
+
+
+
+            <ul className={"text-white md:flex hidden list-none flex-row justify-between items-center flex-initial" +
+                "text-white-600 hover:text-blue-800 visited:text-white-600"}>
+
+                {[
+                    <Link to='/'>Home</Link>,
+                    <Link to='/cryptocurrencies'>Cryptocurrencies</Link>,
+                    <Link to='/news'>News</Link>,
+                    // <Link to='/Wallets'>Wallets</Link>,
+                    // <Link to='/Tutorials'>Tutorials</Link>
+                ].map((item, index) => (
+                    <NavbarItem key={item + index} title={item}/>
+                ))}
+
+
+            </ul>
+
+        </nav>
+    );
+};
 
 export default Navbar;
