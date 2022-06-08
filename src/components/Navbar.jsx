@@ -25,9 +25,9 @@ const Navbar = () => {
                 "text-white-600 hover:text-blue-800 visited:text-white-600"}>
 
                 {[
-                    <Link to='/'>Home</Link>,
-                    <Link to='/cryptocurrencies'>Cryptocurrencies</Link>,
-                    <Link to='/news'>News</Link>,
+                    <Link className={"text-white"} to='/'>Home</Link>,
+                    <Link className={"text-white"} to='/cryptocurrencies'>Cryptocurrencies</Link>,
+                    <Link className={"text-white"} to='/news'>News</Link>,
                     // <Link to='/Wallets'>Wallets</Link>,
                     // <Link to='/Tutorials'>Tutorials</Link>
 
