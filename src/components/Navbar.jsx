@@ -30,6 +30,7 @@ const Navbar = () => {
                     <Link to='/news'>News</Link>,
                     // <Link to='/Wallets'>Wallets</Link>,
                     // <Link to='/Tutorials'>Tutorials</Link>
+
                 ].map((item, index) => (
                     <NavbarItem key={item + index} title={item}/>
                 ))}
