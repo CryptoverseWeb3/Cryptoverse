@@ -1,10 +1,10 @@
 import React from 'react';
 
-import {Menu, Typography, Avatar} from 'antd';
+// import {Menu, Typography, Avatar} from 'antd';
 import {Link} from 'react-router-dom';
-import {HomeOutlined, BulbOutlined, FundOutlined,} from "@ant-design/icons";
+// import {HomeOutlined, BulbOutlined, FundOutlined,} from "@ant-design/icons";
 
-import icon from '../images/cryptocurrency.png';
+// import icon from '../images/cryptocurrency.png';
 
 const NavbarItem = ({title, classProps}) => {
     return (
@@ -15,7 +15,7 @@ const NavbarItem = ({title, classProps}) => {
 }
 
 const Navbar = () => {
-    const [toggleMenu, setToggleMenu] = React.useState(false);
+    // const [toggleMenu, setToggleMenu] = React.useState(false);
     return (
         <nav className={"w-full flex md:justify-center justify-between items-center p-4"}>
 
