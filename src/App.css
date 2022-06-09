@@ -282,7 +282,7 @@ a:hover {
 
     .main {
         flex: 1;
-        margin-top: 90px;
+        margin-top: 0;
         margin-left: 0px;
         margin-right: 10px;
     }
