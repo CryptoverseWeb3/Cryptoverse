@@ -14,31 +14,34 @@ body {
 }
 
 /* Theme color change */
-body.light-theme{
+body.light-theme {
     --light-color: #3d3d3d;
-    --light-color-alt: rgba(0,0,0,.6);
+    --light-color-alt: rgba(0, 0, 0, .6);
     --primary-background-color: #fff;
     --secondary-background-color: #f1f1f1;
     --hover-light-color: #fff;
     --transparent-dark-color: var(--secondary-background-color);
-    --transparent-light-color: rgba(0,0,0,.1);
+    --transparent-light-color: rgba(0, 0, 0, .1);
 }
+
 .navbar-text {
     font-size: 18px;
 }
 
-.social-icons{
+.social-icons {
     font-size: 20px;
     padding: 5px;
 }
-.dark{
+
+.dark {
     background: #0f0e13
 }
-.border-round{
-border-radius: 52px;
+
+.border-round {
+    border-radius: 52px;
 }
 
-.dark-global-crypto-stats{
+.dark-global-crypto-stats {
     background-color: #ffffff;
     backdrop-filter: saturate(180%) blur(10px);
     border: #1c1f26;
@@ -51,31 +54,26 @@ border-radius: 52px;
 .gradient-bg-welcome {
     font-size: 18px;
     /*font-size: 50px;*/
-    background-color:#0f0e13;
-    background-image:
-        /*radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%),*/
-            radial-gradient(at 0% 0%, hsl(0, 0%, 6%) 0, transparent 50%),
-            radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%),
-                /*radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);*/
-            radial-gradient(at 100% 0%, hsl(31, 94%, 14%) 0, transparent 50%);
+    background-color: #0f0e13;
+    background-image: /*radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%),*/ radial-gradient(at 0% 0%, hsl(0, 0%, 6%) 0, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+        /*radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);*/ radial-gradient(at 100% 0%, hsl(31, 94%, 14%) 0, transparent 50%);
 }
 
 .gradient-bg-services {
     flex: 0.8;
     width: 100%;
 
-    background-color:#0f0e13;
-    background-image:
-            radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%),
-            radial-gradient(at 50% 100%, hsla(225,39%,25%,1) 0, transparent 50%);
+    background-color: #0f0e13;
+    background-image: radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%);
 }
 
 
 .gradient-bg-transactions {
     background-color: #0f0e13;
-    background-image:
-            radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 50%),
-            radial-gradient(at 50% 0%, hsla(225,39%,25%,1) 0, transparent 50%);
+    background-image: radial-gradient(at 0% 100%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 25%, 1) 0, transparent 50%);
 }
 
 .gradient-bg-footer {
@@ -85,9 +83,8 @@ border-radius: 52px;
     padding: 20px;
     align-items: center;
     background-color: #0f0e13;
-    background-image:
-            radial-gradient(at 0% 100%, hsl(246, 36%, 23%) 0, transparent 53%),
-            radial-gradient(at 50% 150%, hsl(30, 100%, 35%) 0, transparent 50%);
+    background-image: radial-gradient(at 0% 100%, hsl(246, 36%, 23%) 0, transparent 53%),
+    radial-gradient(at 50% 150%, hsl(30, 100%, 35%) 0, transparent 50%);
 }
 
 .blue-glassmorphism {
@@ -110,14 +107,13 @@ border-radius: 52px;
 
 .eth-card {
     background-color: #746e9f;
-    background-image:
-            radial-gradient(at 83% 67%, rgb(152, 231, 156) 0, transparent 58%),
-            radial-gradient(at 67% 20%, hsl(31, 92%, 51%) 0, transparent 59%),
-            radial-gradient(at 88% 35%, hsla(222,81%,65%,1) 0, transparent 50%),
-            radial-gradient(at 31% 91%, hsla(9,61%,61%,1) 0, transparent 52%),
-            radial-gradient(at 27% 71%, hsl(31, 92%, 51%) 0, transparent 49%),
-            radial-gradient(at 74% 89%, hsl(31, 92%, 51%) 0, transparent 51%),
-            radial-gradient(at 53% 75%, hsl(134, 100%, 41%) 0, transparent 45%);
+    background-image: radial-gradient(at 83% 67%, rgb(152, 231, 156) 0, transparent 58%),
+    radial-gradient(at 67% 20%, hsl(31, 92%, 51%) 0, transparent 59%),
+    radial-gradient(at 88% 35%, hsla(222, 81%, 65%, 1) 0, transparent 50%),
+    radial-gradient(at 31% 91%, hsla(9, 61%, 61%, 1) 0, transparent 52%),
+    radial-gradient(at 27% 71%, hsl(31, 92%, 51%) 0, transparent 49%),
+    radial-gradient(at 74% 89%, hsl(31, 92%, 51%) 0, transparent 51%),
+    radial-gradient(at 53% 75%, hsl(134, 100%, 41%) 0, transparent 45%);
 }
 
 /*.eth-card {*/
@@ -139,7 +135,7 @@ border-radius: 52px;
     -webkit-text-fill-color: transparent;
 }
 
-.dec{
+.dec {
     color: #3d3d3d;
 }
 
@@ -151,19 +147,17 @@ border-radius: 52px;
     --heading-color-orng: #ff8100;
     --light-blue: #e6f7ff;
     --border: #d9d9d9;
-    --background-color:#0f0e13;
-    --background-image:
-            radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%),
-            radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%),
-            radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+    --background-color: #0f0e13;
+    --background-image: radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
 }
 
 .gradient-bg-welcome {
-    background-color:#0f0e13;
-    background-image:
-            radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%),
-            radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%),
-            radial-gradient(at 100% 0%, hsl(31, 94%, 14%) 0, transparent 50%);
+    background-color: #0f0e13;
+    background-image: radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsl(31, 94%, 14%) 0, transparent 50%);
 }
 
 * {
@@ -195,11 +189,10 @@ a:hover {
     flex: 0.8;
     width: 100%;
 
-    background-color:#0f0e13;
-    background-image:
-            radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%),
-            radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%),
-            radial-gradient(at 100% 0%, hsl(31, 94%, 14%) 0, transparent 50%);
+    background-color: #0f0e13;
+    background-image: radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsl(31, 94%, 14%) 0, transparent 50%);
     /*flex: 0.75;*/
     /*width: 100vw;*/
     /*margin-top: 10vh;*/
