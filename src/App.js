@@ -1,8 +1,12 @@
 import React from 'react';
-import {Routes, Route, Link} from 'react-router-dom';
-import {Layout, Typography, Space} from 'antd';
+import {Routes, Route,
+    // Link
+} from 'react-router-dom';
+import {Layout,
+    // Typography, Space
+} from 'antd';
 
-import {Navbar, Exchanges, Homepage, Cryptocurrencies, CryptoDetails, News} from './components';
+import {Navbar, Exchanges, Homepage, Cryptocurrencies, CryptoDetails, News, Footer} from './components';
 import './App.css';
 
 const App = () => {
@@ -24,21 +28,11 @@ const App = () => {
                         </Routes>
                     </div>
                 </Layout>
-
-
-                <div className={"footer"}>
-                    <Typography.Title level={5} style={{color: 'white', textAlign: 'center'}}>
-                        Cryptoverse <br/>
-                        All rights reserved
-                    </Typography.Title>
-                    <Space>
-                        <Link to={"/"}>Home</Link>
-                        <Link to={"/exchanges"}>Exchanges</Link>
-                        <Link to={"/news"}>News</Link>
-                    </Space>
-                </div>
             </div>
 
+            <div className={"gradient-bg-footer"}>
+                <Footer/>
+            </div>
         </div>
     );
 }

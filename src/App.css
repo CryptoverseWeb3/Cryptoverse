@@ -13,7 +13,39 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Theme color change */
+body.light-theme{
+    --light-color: #3d3d3d;
+    --light-color-alt: rgba(0,0,0,.6);
+    --primary-background-color: #fff;
+    --secondary-background-color: #f1f1f1;
+    --hover-light-color: #fff;
+    --transparent-dark-color: var(--secondary-background-color);
+    --transparent-light-color: rgba(0,0,0,.1);
+}
+.social-icons{
+    padding: 5px;
+}
+.dark{
+    background: #0f0e13
+}
+.border-round{
+border-radius: 52px;
+}
+
+.dark-global-crypto-stats{
+    background-color: #ffffff;
+    backdrop-filter: saturate(180%) blur(10px);
+    border: #1c1f26;
+    border-radius: 16px;
+    padding: 15px;
+    /*backdrop-filter: blur(5px);*/
+    -webkit-backdrop-filter: blur(5px);
+}
+
 .gradient-bg-welcome {
+    font-size: 18px;
+    /*font-size: 50px;*/
     background-color:#0f0e13;
     background-image:
         /*radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%),*/
@@ -24,11 +56,15 @@ body {
 }
 
 .gradient-bg-services {
+    flex: 0.8;
+    width: 100%;
+
     background-color:#0f0e13;
     background-image:
             radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%),
             radial-gradient(at 50% 100%, hsla(225,39%,25%,1) 0, transparent 50%);
 }
+
 
 .gradient-bg-transactions {
     background-color: #0f0e13;
@@ -38,9 +74,14 @@ body {
 }
 
 .gradient-bg-footer {
+    /*background-color: #001529;*/
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
     background-color: #0f0e13;
     background-image:
-            radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 53%),
+            radial-gradient(at 0% 100%, hsl(246, 36%, 23%) 0, transparent 53%),
             radial-gradient(at 50% 150%, hsl(30, 100%, 35%) 0, transparent 50%);
 }
 
@@ -87,18 +128,22 @@ body {
 /*}*/
 
 .text-gradient {
-    background-color: #fff;
-    background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
+    background-color: #343434;
+    background-image: radial-gradient(at 4% 36%, hsl(0, 0%, 20%) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(42, 42, 42) 0, transparent 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+.dec{
+    color: #3d3d3d;
+}
 
 :root {
     --text-primary: #000;
     --bgPrimary: #fff;
     --bgSecondary: #F9F9F9;
-    --pink: #0071bd;
+    --heading-color-dark: #171e26;
+    --heading-color-orng: #ff8100;
     --light-blue: #e6f7ff;
     --border: #d9d9d9;
     --background-color:#0f0e13;
@@ -123,7 +168,7 @@ body {
 }
 
 a:hover {
-    color: var(--pink) !important;
+    color: #777777 !important;
 }
 
 .app {
@@ -145,7 +190,11 @@ a:hover {
     flex: 0.8;
     width: 100%;
 
-
+    background-color:#0f0e13;
+    background-image:
+            radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%),
+            radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%),
+            radial-gradient(at 100% 0%, hsl(31, 94%, 14%) 0, transparent 50%);
     /*flex: 0.75;*/
     /*width: 100vw;*/
     /*margin-top: 10vh;*/
@@ -235,7 +284,7 @@ a:hover {
 
     .main {
         flex: 1;
-        margin-top: 90px;
+        margin-top: 0;
         margin-left: 0px;
         margin-right: 10px;
     }
@@ -286,7 +335,7 @@ a:hover {
 
 .coin-heading-container .coin-name {
     font-weight: 900;
-    color: var(--pink);
+    color: var(--heading-color-dark);
 }
 
 .coin-heading-container p {
@@ -306,13 +355,13 @@ a:hover {
     font-weight: 700;
     font-size: 1.4rem;
     margin-top: 20px;
-    color: var(--pink);
+    color: var(--heading-color-dark);
 }
 
 .coin-details-heading {
     font-weight: 700 !important;
     margin-top: 20px !important;
-    color: var(--pink) !important;
+    color: var(--heading-color-dark) !important;
 }
 
 .coin-stats {
@@ -349,7 +398,7 @@ a:hover {
 
 .coin-desc-link h2 {
     font-weight: 700;
-    color: var(--pink);
+    color: var(--heading-color-dark);
 }
 
 .coin-desc-link p {
@@ -358,7 +407,7 @@ a:hover {
 }
 
 .coin-desc-link a {
-    color: var(--pink);
+    color: var(--heading-color-dark);
 }
 
 .coin-desc-link h3 {
@@ -388,7 +437,7 @@ a:hover {
 }
 
 .coin-link a {
-    color: var(--pink);
+    color: var(--heading-color-dark);
     font-weight: 700;
     font-size: 1rem;
 }

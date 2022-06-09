@@ -25,14 +25,13 @@ jobs:
       - run: npm install
       - run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /cryptoverse
-          REACT_APP_RAPIDAPI_HOST: ${{ secrets.RAPIDAPI_HOST }}
-          REACT_APP_RAPIDAPI_KEY=: ${{ secrets.RAPIDAPI_KEY }}
-          REACT_APP_CRYPTO_API_URL: ${{ secrets.CRYPTO_API_URL }}
+          REACT_APP_RAPIDAPI_HOST: ${{ secrets.REACT_APP_RAPIDAPI_HOST }}
+          REACT_APP_RAPIDAPI_KEY: ${{ secrets.REACT_APP_RAPIDAPI_KEY }}
+          REACT_APP_CRYPTO_API_URL: ${{ secrets.REACT_APP_CRYPTO_API_URL }}
 
-          REACT_APP_NEWS_RAPIDAPI_HOST: ${{ secrets.NEWS_RAPIDAPI_HOST }}
-          REACT_APP_NEWS_RAPIDAPI_KEY: ${{ secrets.NEWS_RAPIDAPI_KEY }}
-          REACT_APP_NEWS_API_URL: ${{ secrets.NEWS_API_URL }}
+          REACT_APP_NEWS_RAPIDAPI_HOST: ${{ secrets.REACT_APP_NEWS_RAPIDAPI_HOST }}
+          REACT_APP_NEWS_RAPIDAPI_KEY: ${{ secrets.REACT_APP_NEWS_RAPIDAPI_KEY }}
+          REACT_APP_NEWS_API_URL: ${{ secrets.REACT_APP_NEWS_API_URL }}
 
 #            - name: Use Node.js ${{ matrix.node-version }}
 #              uses: actions/setup-node@v2
@@ -47,7 +46,6 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
           

@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
 
-// import {Menu, Typography, Avatar} from 'antd';
+import {HiMenuAlt4} from "react-icons/hi";
+import {AiOutlineClose} from "react-icons/ai";
+
 import {Link} from 'react-router-dom';
-// import {HomeOutlined, BulbOutlined, FundOutlined,} from "@ant-design/icons";
 
-// import icon from '../images/cryptocurrency.png';
+
+import logo from '../images/Logo_Cryptoverse.png';
 
 const NavbarItem = ({title, classProps}) => {
     return (
@@ -15,29 +17,53 @@ const NavbarItem = ({title, classProps}) => {
 }
 
 const Navbar = () => {
-    // const [toggleMenu, setToggleMenu] = React.useState(false);
+    const [toggleMenu, setToggleMenu] = React.useState(false);
     return (
         <nav className={"w-full flex md:justify-center justify-between items-center p-4"}>
-
-
+            <div className={"md:flex-[0.5] flex-initial justify-center items-center"}>
+                <Link className={"text-white"} to='/'>
+                    <img src={logo} alt="cryptoverseWeb3 logo" className={"w-48 cursor-pointer"}/>
+                </Link>
+            </div>
 
             <ul className={"text-white md:flex hidden list-none flex-row justify-between items-center flex-initial" +
                 "text-white-600 hover:text-blue-800 visited:text-white-600"}>
-
                 {[
-                    <Link to='/'>Home</Link>,
-                    <Link to='/cryptocurrencies'>Cryptocurrencies</Link>,
-                    <Link to='/news'>News</Link>,
-                    // <Link to='/Wallets'>Wallets</Link>,
-                    // <Link to='/Tutorials'>Tutorials</Link>
-
+                    <Link className={"text-white"} to='/cryptocurrencies'>Cryptocurrencies</Link>,
+                    <Link className={"text-white"} to='/news'>News</Link>,
+                    <Link className={"text-white"} to='/Wallets'>Wallets</Link>,
+                    <Link className={"text-white"} to='/Tutorials'>Tutorials</Link>
                 ].map((item, index) => (
                     <NavbarItem key={item + index} title={item}/>
                 ))}
-
+                <div />
 
             </ul>
 
+            <div className={"flex relative"}>
+                {toggleMenu
+                    ? <AiOutlineClose fontsize={28} className={"text-white md:hidden cursor-pointer"}
+                                      onClick={() => setToggleMenu(false)}/>
+                    : <HiMenuAlt4 fontsize={28} className={"text-white md:hidden cursor-pointer"}
+                                  onClick={() => setToggleMenu(true)}/>
+                }
+                {toggleMenu && (
+                    <ul className={"z-10 fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-2x1 md:hidden list-none flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in"}>
+                        <li className={"text-xl w-full my-2"}>
+                            <AiOutlineClose onClick={() => setToggleMenu(false)}/>
+                        </li>
+                        {[
+                            <Link className={"text-white"} to='/'>Home</Link>,
+                            <Link className={"text-white"} to='/cryptocurrencies'>Cryptocurrencies</Link>,
+                            <Link className={"text-white"} to='/news'>News</Link>,
+                            <Link className={"text-white"} to='/Wallets'>Wallets</Link>,
+                            <Link className={"text-white"} to='/Tutorials'>Tutorials</Link>
+                        ].map((item, index) => (
+                            <NavbarItem key={item + index} title={item} classProps={"my-2 text-lg"}/>
+                        ))}
+                    </ul>
+                )}
+            </div>
         </nav>
     );
 };
