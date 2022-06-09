@@ -20,16 +20,15 @@ const Navbar = () => {
     const [toggleMenu, setToggleMenu] = React.useState(false);
     return (
         <nav className={"w-full flex md:justify-center justify-between items-center p-4"}>
-
             <div className={"md:flex-[0.5] flex-initial justify-center items-center"}>
-                <img src={logo} alt="cryptoverseWeb3 logo" className={"w-48 cursor-pointer"}/>
+                <Link className={"text-white"} to='/'>
+                    <img src={logo} alt="cryptoverseWeb3 logo" className={"w-48 cursor-pointer"}/>
+                </Link>
             </div>
 
             <ul className={"text-white md:flex hidden list-none flex-row justify-between items-center flex-initial" +
                 "text-white-600 hover:text-blue-800 visited:text-white-600"}>
-
                 {[
-                    <Link className={"text-white"} to='/'>Home</Link>,
                     <Link className={"text-white"} to='/cryptocurrencies'>Cryptocurrencies</Link>,
                     <Link className={"text-white"} to='/news'>News</Link>,
                     <Link className={"text-white"} to='/Wallets'>Wallets</Link>,
@@ -37,6 +36,8 @@ const Navbar = () => {
                 ].map((item, index) => (
                     <NavbarItem key={item + index} title={item}/>
                 ))}
+                <div />
+
             </ul>
 
             <div className={"flex relative"}>
@@ -46,7 +47,6 @@ const Navbar = () => {
                     : <HiMenuAlt4 fontsize={28} className={"text-white md:hidden cursor-pointer"}
                                   onClick={() => setToggleMenu(true)}/>
                 }
-
                 {toggleMenu && (
                     <ul className={"z-10 fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-2x1 md:hidden list-none flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in"}>
                         <li className={"text-xl w-full my-2"}>
