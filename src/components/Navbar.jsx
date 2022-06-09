@@ -37,7 +37,6 @@ const Navbar = () => {
                         <NavbarItem key={item + index} title={item}/>
                     ))}
                     <div/>
-
                 </ul>
             </nav>
             <div
@@ -60,7 +59,7 @@ const Navbar = () => {
             </div>
             <div className={"flex relative"}>
                 {toggleMenu
-                    ? <AiOutlineClose fontsize={28} className={"text-white md:hidden cursor-pointer"}
+                    ? <AiOutlineClose fontsize={28} className={"hidden text-white md:hidden sm:hidden cursor-pointer"}
                                       onClick={() => setToggleMenu(false)}/>
                     : <HiMenuAlt4 fontsize={28} className={"text-white md:hidden cursor-pointer"}
                                   onClick={() => setToggleMenu(true)}/>
@@ -68,7 +67,8 @@ const Navbar = () => {
                 {toggleMenu && (
                     <ul className={"z-10 fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-2x1 md:hidden list-none flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in"}>
                         <li className={"text-xl w-full my-2"}>
-                            <AiOutlineClose onClick={() => setToggleMenu(false)}/>
+                            <AiOutlineClose className={"bg-gray-800 m-5 text-3xl"}
+                                onClick={() => setToggleMenu(false)}/>
                         </li>
                         {[
                             <Link className={"text-white"} to='/'>Home</Link>,
