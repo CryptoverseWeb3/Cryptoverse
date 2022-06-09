@@ -19,27 +19,45 @@ const NavbarItem = ({title, classProps}) => {
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = React.useState(false);
     return (
-        <nav className={"w-full flex md:justify-center justify-between items-center p-4"}>
-            <div className={"md:flex-[0.5] flex-initial justify-center items-center"}>
+        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                 <Link className={"text-white"} to='/'>
                     <img src={logo} alt="cryptoverseWeb3 logo" className={"w-48 cursor-pointer"}/>
                 </Link>
+            </a>
+            <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                <ul className={"text-white md:flex hidden list-none flex-row justify-between items-center flex-initial" +
+                    "text-white-600 hover:text-blue-800 visited:text-white-600"}>
+                    {[
+                        <Link className={"text-white"} to='/cryptocurrencies'>Cryptocurrencies</Link>,
+                        <Link className={"text-white"} to='/news'>News</Link>,
+                        <Link className={"text-white"} to='/Wallets'>Wallets</Link>,
+                        <Link className={"text-white"} to='/Tutorials'>Tutorials</Link>
+                    ].map((item, index) => (
+                        <NavbarItem key={item + index} title={item}/>
+                    ))}
+                    <div/>
+
+                </ul>
+            </nav>
+            <div
+                className={"text-white md:flex hidden list-none flex-row justify-between items-center  text-white-600 hover:text-blue-800 visited:text-white-600 text-2xl"}>
+                <a className={"text-white"} href="https://twitter.com/CryptoverseWeb3"><i
+                    className="social-icons ri-twitter-line"></i></a>
+                <a className={"text-white"} href="https://github.com/CryptoverseWeb3"><i
+                    className="social-icons ri-github-fill"></i></a>
+                <a className={"text-white"}
+                   href="https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg/?sub_confirmation=1"><i
+                    className="social-icons ri-youtube-fill"></i></a>
+                <a className={"text-white"} href="https://instagram.com/CryptoverseWeb3"><i
+                    className="social-icons ri-instagram-fill"></i></a>
+                <a className={"text-white"} href="https://discord.gg/WhDry9FWE7"><i
+                    className="social-icons ri-discord-fill"></i></a>
+                <a className={"text-white"} href="https://t.me/cryptoverseweb3"><i
+                    className="social-icons ri-telegram-line"></i></a>
+                <a className={"text-white"} href="https://www.facebook.com/cryptoverseweb3"><i
+                    className="social-icons ri-facebook-fill"></i></a>
             </div>
-
-            <ul className={"text-white md:flex hidden list-none flex-row justify-between items-center flex-initial" +
-                "text-white-600 hover:text-blue-800 visited:text-white-600"}>
-                {[
-                    <Link className={"text-white"} to='/cryptocurrencies'>Cryptocurrencies</Link>,
-                    <Link className={"text-white"} to='/news'>News</Link>,
-                    <Link className={"text-white"} to='/Wallets'>Wallets</Link>,
-                    <Link className={"text-white"} to='/Tutorials'>Tutorials</Link>
-                ].map((item, index) => (
-                    <NavbarItem key={item + index} title={item}/>
-                ))}
-                <div />
-
-            </ul>
-
             <div className={"flex relative"}>
                 {toggleMenu
                     ? <AiOutlineClose fontsize={28} className={"text-white md:hidden cursor-pointer"}
@@ -61,10 +79,31 @@ const Navbar = () => {
                         ].map((item, index) => (
                             <NavbarItem key={item + index} title={item} classProps={"my-2 text-lg"}/>
                         ))}
+                        <div
+                            className={"text-white md:flex list-none flex-row justify-between items-center  text-white-600 hover:text-blue-800 visited:text-white-600 text-2xl"}>
+                            <a className={"text-white"} href="https://twitter.com/CryptoverseWeb3"><i
+                                className="social-icons ri-twitter-line"></i></a>
+                            <a className={"text-white"} href="https://github.com/CryptoverseWeb3"><i
+                                className="social-icons ri-github-fill"></i></a>
+                            <a className={"text-white"}
+                               href="https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg/?sub_confirmation=1"><i
+                                className="social-icons ri-youtube-fill"></i></a>
+                            <a className={"text-white"} href="https://instagram.com/CryptoverseWeb3"><i
+                                className="social-icons ri-instagram-fill"></i></a>
+                            <a className={"text-white"} href="https://discord.gg/WhDry9FWE7"><i
+                                className="social-icons ri-discord-fill"></i></a>
+                            <a className={"text-white"} href="https://t.me/cryptoverseweb3"><i
+                                className="social-icons ri-telegram-line"></i></a>
+                            <a className={"text-white"} href="https://www.facebook.com/cryptoverseweb3"><i
+                                className="social-icons ri-facebook-fill"></i></a>
+                        </div>
+
                     </ul>
+
                 )}
+
             </div>
-        </nav>
+        </div>
     );
 };
 
