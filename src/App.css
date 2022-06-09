@@ -166,7 +166,7 @@ border-radius: 52px;
 }
 
 a:hover {
-    color: var(--heading-color-dark) !important;
+    color: #777777 !important;
 }
 
 .app {
