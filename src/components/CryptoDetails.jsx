@@ -46,7 +46,7 @@ const CryptoDetails = () => {
                 <Title level={2} className={"coin-name"}>
                     {cryptoDetails.name} ({cryptoDetails.slug}) Price
                 </Title>
-                <p>
+                <p className={"dec"}>
                     {cryptoDetails.name} Live price in US dollars.
                     View value statistics, market cap and supply.
                 </p>
@@ -106,7 +106,7 @@ const CryptoDetails = () => {
                 <Row className={"coin-desc"}>
                     <Title level={3} className={"coin-details-heading"}>
                         What is {cryptoDetails.name}
-                        {HTMLReactParser(cryptoDetails.description)}
+                        <p className={"dec"}>{HTMLReactParser(cryptoDetails.description)}</p>
                     </Title>
                 </Row>
                 <Col className={"coin-links"}>
