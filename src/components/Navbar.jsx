@@ -20,11 +20,11 @@ const Navbar = () => {
     const [toggleMenu, setToggleMenu] = React.useState(false);
     return (
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href={""}>
+            <div className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                 <Link className={"text-white"} to='/'>
                     <img src={logo} alt="cryptoverseWeb3 logo" className={"w-48 cursor-pointer"}/>
                 </Link>
-            </a>
+            </div>
             <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
                 <ul className={"text-white md:flex hidden list-none flex-row justify-between items-center flex-initial" +
                     "text-white-600 hover:text-blue-800 visited:text-white-600"}>
