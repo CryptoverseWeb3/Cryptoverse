@@ -26,8 +26,7 @@ const Navbar = () => {
                 </Link>
             </div>
             <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                <ul className={"text-white md:flex hidden list-none flex-row justify-between items-center flex-initial" +
-                    "text-white-600 hover:text-blue-800 visited:text-white-600"}>
+                <ul className={"navbar-text text-white md:flex hidden list-none flex-row justify-between items-center flex-initial text-white-600 hover:text-blue-800 visited:text-white-600"}>
                     {[
                         <Link className={"text-white"} to='/cryptocurrencies'>Cryptocurrencies</Link>,
                         <Link className={"text-white"} to='/news'>News</Link>,
