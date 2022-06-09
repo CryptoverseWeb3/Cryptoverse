@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
             <Typography.Title level={5} style={{color: 'white', textAlign: 'center'}}>
                 {/*<Link className={"text-green-500"} to='/'>*/}
-                    Cryptoverse
+                Cryptoverse
                 {/*</Link>*/}
                 <br/>
                 All rights reserved
