@@ -20,7 +20,7 @@ const Navbar = () => {
     const [toggleMenu, setToggleMenu] = React.useState(false);
     return (
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href={""}>
                 <Link className={"text-white"} to='/'>
                     <img src={logo} alt="cryptoverseWeb3 logo" className={"w-48 cursor-pointer"}/>
                 </Link>
