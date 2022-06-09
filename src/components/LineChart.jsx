@@ -1,15 +1,15 @@
 import React from 'react';
 import 'chart.js/auto';
-import { Chart } from 'react-chartjs-2';
+import {Chart} from 'react-chartjs-2';
 
 // import { Line } from 'react-chartjs-2';
 
-import { Col, Row, Typography } from 'antd';
+import {Col, Row, Typography} from 'antd';
 import moment from 'moment';
 
-const { Title:AnTitle } = Typography;
+const {Title: AnTitle} = Typography;
 
-const LineChart = ({ coinHistory, currentPrice, coinName, coinColor }) => {
+const LineChart = ({coinHistory, currentPrice, coinName, coinColor}) => {
     const coinPrice = [];
     const coinTimestamp = [];
 
@@ -18,8 +18,8 @@ const LineChart = ({ coinHistory, currentPrice, coinName, coinColor }) => {
     }
 
     for (let i = 0; i < coinHistory?.data?.history?.length; i++) {
-  //      coinTimestamp.push(new Date(coinHistory?.data?.history[i].timestamp).toLocaleDateString());
-          coinTimestamp.push(moment(coinHistory.data.history[i].timestamp * 1000).format('Do MMMM, \'YY (HH:mm)'))
+        //      coinTimestamp.push(new Date(coinHistory?.data?.history[i].timestamp).toLocaleDateString());
+        coinTimestamp.push(moment(coinHistory.data.history[i].timestamp * 1000).format('Do MMMM, \'YY (HH:mm)'))
     }
 
     coinPrice.reverse()
@@ -74,7 +74,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName, coinColor }) => {
                 </Col>
             </Row>
             {/* <Line data={data} /> */}
-            <Chart type='line' options={options} data={data} />
+            <Chart type='line' options={options} data={data}/>
         </>
     );
 };
