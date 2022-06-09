@@ -90,14 +90,6 @@ const CryptoDetails = () => {
                 </p>
             </Col>
 
-            <Select defaultValue={"7d"} className={"select-timeperiod"} placeholder={"Select Time Period"}
-                    onChange={(value) => setTimeperiod(value)}>
-                {time.map((date) => <Option key={date}>{date}</Option>)}
-            </Select>
-
-            <LineChart coinHistory={coinHistory} currentPrice={millify(cryptoDetails?.price)}
-                       coinName={cryptoDetails?.name}/>
-
             <Col className={"stats-container"}>
                 <Col className={"coin-value-statistics"}>
                     <Col className={"coin-value-statistics-heading"}>
@@ -140,6 +132,14 @@ const CryptoDetails = () => {
                     ))}
                 </Col>
             </Col>
+
+            <Select defaultValue={"7d"} className={"select-timeperiod"} placeholder={"Select Time Period"}
+                    onChange={(value) => setTimeperiod(value)}>
+                {time.map((date) => <Option key={date}>{date}</Option>)}
+            </Select>
+
+            <LineChart coinHistory={coinHistory} currentPrice={millify(cryptoDetails?.price)}
+                       coinName={cryptoDetails?.name}/>
 
             <Col className={"coin-desc-link"}>
                 <Row className={"coin-desc"}>
