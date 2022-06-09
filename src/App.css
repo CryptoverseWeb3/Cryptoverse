@@ -23,7 +23,9 @@ body.light-theme{
     --transparent-dark-color: var(--secondary-background-color);
     --transparent-light-color: rgba(0,0,0,.1);
 }
-
+.social-icons{
+    padding: 5px;
+}
 .dark{
     background: #0f0e13
 }
