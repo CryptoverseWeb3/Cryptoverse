@@ -10,7 +10,6 @@ import {
 
 import {Navbar, Exchanges, Homepage, Cryptocurrencies, CryptoDetails, News, Footer} from './components';
 import './App.css';
-
 const App = () => {
     return (
         <div className={"app"}>
