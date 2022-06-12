@@ -66,14 +66,15 @@ const Navbar = () => {
                     <ul className={"z-10 fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-2x1 md:hidden list-none flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in"}>
                         <li className={"text-xl w-full my-2"}>
                             <AiOutlineClose className={"bg-gray-800 m-5 text-3xl"}
-                                onClick={() => setToggleMenu(false)}/>
+                                            onClick={() => setToggleMenu(false)}/>
                         </li>
                         {[
                             <Link className={"text-white"} to='/'>Home</Link>,
                             <Link className={"text-white"} to='/cryptocurrencies'>Cryptocurrencies</Link>,
                             <Link className={"text-white"} to='/news'>News</Link>,
                             <Link className={"text-white"} to='/Wallets'>Wallets</Link>,
-                            <a className={"text-white"} href='https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg/?sub_confirmation=1' target={"_blank"}>
+                            <a className={"text-white"}
+                               href='https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg/?sub_confirmation=1' target={"_blank"} rel="noreferrer">
                                 Tutorials
                             </a>
                         ].map((item, index) => (
