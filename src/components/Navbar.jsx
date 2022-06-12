@@ -5,7 +5,6 @@ import {AiOutlineClose} from "react-icons/ai";
 
 import {Link} from 'react-router-dom';
 
-
 import logo from '../images/Logo_Cryptoverse.png';
 
 const NavbarItem = ({title, classProps}) => {
@@ -74,7 +73,9 @@ const Navbar = () => {
                             <Link className={"text-white"} to='/cryptocurrencies'>Cryptocurrencies</Link>,
                             <Link className={"text-white"} to='/news'>News</Link>,
                             <Link className={"text-white"} to='/Wallets'>Wallets</Link>,
-                            <Link className={"text-white"} to='/Tutorials'>Tutorials</Link>
+                            <a className={"text-white"} href='https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg/?sub_confirmation=1' target={"_blank"}>
+                                Tutorials
+                            </a>
                         ].map((item, index) => (
                             <NavbarItem key={item + index} title={item} classProps={"my-2 text-lg"}/>
                         ))}
