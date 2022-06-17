@@ -23,25 +23,9 @@ jobs:
       - uses: actions/checkout@v2
 
       - run: npm install
-
       - run: npm run build
         env:
           REACT_APP_RAPIDAPI_KEY: ${{ secrets.REACT_APP_RAPIDAPI_KEY }}
-
-        - name: 'Create env file'
-          run: |
-            touch .env
-            echo REACT_APP_RAPIDAPI_KEY=${{ secrets.REACT_APP_RAPIDAPI_KEY }} >> .env
-            cat .env
-#            - name: Use Node.js ${{ matrix.node-version }}
-#              uses: actions/setup-node@v2
-#              with:
-#                node-version: ${{ matrix.node-version }}
-#                cache: 'npm'
-
-#      - run: npm install && npm run build
-#              env:
-#                NEXT_PUBLIC_BASE_PATH: /cryptoverse
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
