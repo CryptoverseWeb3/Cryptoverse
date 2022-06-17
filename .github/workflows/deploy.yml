@@ -11,17 +11,6 @@ on:
 #    branches: [ main ]
 
 jobs:
-  create-envfile:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Make envfile
-        uses: SpicyPizza/create-envfile@v1
-        with:
-          REACT_APP_RAPIDAPI_KEY_DEBUG: false
-          REACT_APP_RAPIDAPI_KEY: ${{ secrets.REACT_APP_RAPIDAPI_KEY }}
-          file_name: .env
-
   build:
     runs-on: ubuntu-latest
 
