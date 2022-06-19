@@ -1,1 +1,1 @@
-# Crpyocurrency / Crypto News App
+# Cryptocurrency / Crypto News App
