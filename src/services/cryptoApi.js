@@ -8,7 +8,7 @@ const cryptoApiHeaders = {
     'X-RapidAPI-Key': RAPIDAPI_KEY
 }
 
-const baseUrl = `https://${RAPIDAPI_HOST}/`;
+const baseUrl = `https://${RAPIDAPI_HOST}`;
 
 const creatRequest = (url) => ({url, headers: cryptoApiHeaders});
 
