@@ -9,7 +9,7 @@ const cryptoNewsApiHeaders = {
     'X-RapidAPI-Key': NEWS_RAPIDAPI_KEY
 }
 
-const baseUrl = `https://${NEWS_API_URL}`;
+const baseUrl = `https://${NEWS_RAPIDAPI_HOST}`;
 
 const createRequest = (url) => ({url, headers: cryptoNewsApiHeaders});
 
