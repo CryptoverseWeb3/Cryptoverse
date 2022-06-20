@@ -5,8 +5,8 @@ const NEWS_RAPIDAPI_KEY = process.env.REACT_APP_NEWS_RAPIDAPI_KEY;
 
 const cryptoNewsApiHeaders = {
     'X-BingApis-SDK': 'true',
-    'X-RapidAPI-Host': NEWS_RAPIDAPI_HOST,
-    'X-RapidAPI-Key': NEWS_RAPIDAPI_KEY
+    'X-RapidAPI-Host': 'bing-news-search1.p.rapidapi.com',
+    'X-RapidAPI-Key': 'b1d57f69b3mshadfcecfc9e489a6p14b18cjsn87ec366e56b2'
 }
 
 const baseUrl = `https://${NEWS_RAPIDAPI_HOST}`;
