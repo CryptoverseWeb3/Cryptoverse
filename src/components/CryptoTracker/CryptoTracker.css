@@ -1,0 +1,53 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.coin-app {
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #0e0e0e;
+}
+
+.coin-search {
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.coin-text {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.coin-input {
+    padding-left: 16px;
+    width: 300px;
+    color: #ffffff;
+
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(
+            -225deg,
+            #0e0e0e 0%,
+            #27304f 48%,
+            #723a03 100%
+    );
+    background-color: #0f0e13;
+
+}
+
+.coin-input::placeholder {
+    color: #ffffff;
+}
