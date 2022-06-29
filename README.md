@@ -1,1 +1,1 @@
-# Crpyocurrency / Crypto News App
+# Crpyocurrency / Crypto News App.
