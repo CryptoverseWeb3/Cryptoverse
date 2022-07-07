@@ -1,17 +1,13 @@
 import React from 'react';
 import {
-    // Space,
     Typography
 } from "antd";
-// import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
         <div>
             <Typography.Title level={5} style={{color: 'white', textAlign: 'center'}}>
-                {/*<Link className={"text-green-500"} to='/'>*/}
                 Cryptoverse
-                {/*</Link>*/}
                 <br/>
                 All rights reserved
             </Typography.Title>
@@ -34,14 +30,6 @@ const Footer = () => {
                 <a className={"text-white"} href="https://www.facebook.com/cryptoverseweb3"><i
                     className="social-icons ri-facebook-fill"></i></a>
             </div>
-
-            {/*<Space>*/}
-            {/*    <Link className={"text-white"} to='/'>Home</Link>*/}
-            {/*    <Link className={"text-white"} to='/cryptocurrencies'>Cryptocurrencies</Link>*/}
-            {/*    <Link className={"text-white"} to='/news'>News</Link>*/}
-            {/*    <Link className={"text-white"} to='/Wallets'>Wallets</Link>*/}
-            {/*    <Link className={"text-white"} to='/Tutorials'>Tutorials</Link>*/}
-            {/*</Space>*/}
         </div>
     );
 };
