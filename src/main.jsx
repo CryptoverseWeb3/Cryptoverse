@@ -11,7 +11,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <Router basepath="/Cryptoverse/">
+        <Router basename="/Cryptoverse">
             <Provider store={store}>
                 <App/>
             </Provider>
