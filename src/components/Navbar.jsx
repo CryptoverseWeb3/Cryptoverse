@@ -29,8 +29,9 @@ const Navbar = () => {
                     {[
                         <Link className={"text-white"} to='/cryptocurrencies'>Cryptocurrencies</Link>,
                         <Link className={"text-white"} to='/news'>News</Link>,
-                        <Link className={"text-white"} to='/Wallets'>Wallets</Link>,
-                        <Link className={"text-white"} to='/Tutorials'>Tutorials</Link>
+                        <a className={"text-white"} href='https://cryptoverseweb3.com' target={"_blank"}>Wallet</a>,
+                        <a className={"text-white"} href='https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg/?sub_confirmation=1' target={"_blank"} rel="noreferrer">
+                            Tutorials </a>
                     ].map((item, index) => (
                         <NavbarItem key={item + index} title={item}/>
                     ))}
@@ -72,7 +73,7 @@ const Navbar = () => {
                             <Link className={"text-white"} to='/'>Home</Link>,
                             <Link className={"text-white"} to='/cryptocurrencies'>Cryptocurrencies</Link>,
                             <Link className={"text-white"} to='/news'>News</Link>,
-                            <Link className={"text-white"} to='/Wallets'>Wallets</Link>,
+                            <a className={"text-white"} href='https://cryptoverseweb3.com' target={"_blank"}>Wallet</a>,
                             <a className={"text-white"}
                                href='https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg/?sub_confirmation=1' target={"_blank"} rel="noreferrer">
                                 Tutorials
