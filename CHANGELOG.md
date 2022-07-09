@@ -1,4 +1,13 @@
-# 0.2.0 (2022-07-09)
+## [0.3.1](https://github.com/cryptoverseWeb3/Cryptoverse/compare/v0.2.0...v0.3.1) (2022-07-09)
+
+
+### Bug Fixes
+
+* refactor CSS ([a339d28](https://github.com/cryptoverseWeb3/Cryptoverse/commit/a339d285419039f7c30ee7f32af9442aca3fc174))
+
+
+
+# [0.2.0](https://github.com/cryptoverseWeb3/Cryptoverse/compare/309a71feab3774d6a6fe30521e1dadac920faa10...v0.2.0) (2022-07-09)
 
 
 ### Features

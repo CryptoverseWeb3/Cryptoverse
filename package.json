@@ -1,7 +1,7 @@
 {
   "homepage": "https://cryptoverseweb3.github.io/Cryptoverse",
   "name": "cryptoverse",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": true,
   "scripts": {
     "dev": "vite",
