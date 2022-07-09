@@ -133,7 +133,7 @@ const CryptoDetails = () => {
                 </Col>
             </Col>
 
-            <Select defaultValue={"7d"} className={"select-timeperiod"} placeholder={"Select Time Period"}
+            <Select defaultValue={"7d"} className={"select-timePeriod"} placeholder={"Select Time Period"}
                     onChange={(value) => setTimeperiod(value)}>
                 {time.map((date) => <Option key={date}>{date}</Option>)}
             </Select>
