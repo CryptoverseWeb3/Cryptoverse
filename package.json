@@ -1,9 +1,8 @@
 {
   "homepage": "https://cryptoverseweb3.github.io/Cryptoverse",
   "name": "cryptoverse",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=Cryptoverse",
@@ -14,7 +13,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@reduxjs/toolkit": "^1.8.1",
@@ -38,28 +36,24 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
   },
-
   "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
       "not op_mini all"
     ],
-
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
   },
-
   "devDependencies": {
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
