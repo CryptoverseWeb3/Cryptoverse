@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/cryptoverseWeb3/Cryptoverse/compare/v0.4.0...v0.5.0) (2022-07-10)
+
+
+### Features
+
+* pull request template ([c746a93](https://github.com/cryptoverseWeb3/Cryptoverse/commit/c746a934e18a540b4546a8323562cdaddeed22c6))
+
+
+
 # [0.4.0](https://github.com/cryptoverseWeb3/Cryptoverse/compare/v0.3.1...v0.4.0) (2022-07-10)
 
 
