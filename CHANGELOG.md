@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/cryptoverseWeb3/Cryptoverse/compare/v0.3.1...v0.4.0) (2022-07-10)
+
+
+### Features
+
+* Issue templates ([92c0eed](https://github.com/cryptoverseWeb3/Cryptoverse/commit/92c0eed14f34c05ce4a411ad07f58a350868c33c))
+
+
+
 ## [0.3.1](https://github.com/cryptoverseWeb3/Cryptoverse/compare/v0.2.0...v0.3.1) (2022-07-09)
 
 
