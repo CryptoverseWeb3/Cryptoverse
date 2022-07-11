@@ -1,4 +1,13 @@
-# 0.1.0 (2022-07-11)
+# [0.2.0](https://github.com/cryptoverseWeb3/Cryptoverse/compare/v0.1.0...v0.2.0) (2022-07-11)
+
+
+### Features
+
+* Added new feature. ([b927184](https://github.com/cryptoverseWeb3/Cryptoverse/commit/b927184fc116540c0e18b2811d9616f9b4f2d755))
+
+
+
+# [0.1.0](https://github.com/cryptoverseWeb3/Cryptoverse/compare/309a71feab3774d6a6fe30521e1dadac920faa10...v0.1.0) (2022-07-11)
 
 
 ### Bug Fixes
