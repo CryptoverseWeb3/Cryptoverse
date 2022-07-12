@@ -1,6 +1,6 @@
 # Cryptoverse
 
-- Cryptoverse is an open-source project
+- Cryptoverse is an open-source project.
 - Provides detailed information about the various cryptocurrencies.
 - A list of the top 100 cryptocurrencies.
 - Latest Crypto News.
