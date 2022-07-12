@@ -17,7 +17,7 @@
 
 Before installation, please make sure you have already installed the following tools:
 - [Git](https://git-scm.com/downloads)
-- [nodejs](https://nodejs.org/en/download/
+- [Nodejs](https://nodejs.org/en/download/)
 
 ---
 
