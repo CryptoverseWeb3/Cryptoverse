@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/cryptoverseWeb3/Cryptoverse/compare/v0.2.0...v0.3.0) (2022-07-12)
+
+
+### Features
+
+* Improve README.md ([0d6d755](https://github.com/cryptoverseWeb3/Cryptoverse/commit/0d6d755d92ea824e177cab1d79b4facd45c999dd))
+
+
+
 # [0.2.0](https://github.com/cryptoverseWeb3/Cryptoverse/compare/v0.1.0...v0.2.0) (2022-07-11)
 
 
