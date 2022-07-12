@@ -27,6 +27,6 @@ Before installation, please make sure you have already installed the following t
 3. Navigate to the cloned project directory
 4. Install the dependencies with `npm install`
 5. Run `npm run dev` to start the server
-6. Open the browser to visit the website at http://localhost:3000/`
+6. Open the browser to visit the website at http://localhost:3000/
 
 ---
