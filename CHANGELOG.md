@@ -1,3 +1,12 @@
+## [0.4.1](https://github.com/kabir0x23/Cryptoverse/compare/v0.4.0...v0.4.1) (2022-07-12)
+
+
+### Bug Fixes
+
+* Improve pull_request_template.md ([3b69257](https://github.com/kabir0x23/Cryptoverse/commit/3b6925757779a21e4da7d33baa66bc4f56d39af9))
+
+
+
 # [0.4.0](https://github.com/kabir0x23/Cryptoverse/compare/v0.3.0...v0.4.0) (2022-07-12)
 
 
