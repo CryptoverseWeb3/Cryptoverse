@@ -8,15 +8,19 @@
 <!-- List all the proposed changes in your PR -->
 
 <!-- Mark all the applicable boxes. To mark the box as done follow the following conventions -->
-
 <!--
+Correct ways to mark a box:
 [x] - Correct; marked as done
 [X] - Correct; marked as done
+
+Incorrect ways to mark a box:
 [ ] - Incorrect; marked as not done
+[x ] - Incorrect; marked as done
+[ x ] - Incorrect; marked as done
+[ x] - Incorrect; marked as done
 -->
 
 ## Check List (Check all the applicable boxes) <!-- Follow the above conventions to check the box -->
-
 - [ ] My code follows the code style of this project.
 - [ ] My change requires changes to the documentation.
 - [ ] I have updated the documentation accordingly.
