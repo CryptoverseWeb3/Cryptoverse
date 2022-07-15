@@ -99,6 +99,7 @@ Start the Cryptoverse application by typing this command:
 ```bash
 npm run dev
 ```
+Open the browser to visit the website at http://localhost:3000/Cryptoverse
 
 ---
 
