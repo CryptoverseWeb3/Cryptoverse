@@ -7,6 +7,14 @@
 ## Changes proposed
 <!-- List all the proposed changes in your PR -->
 
+## Screenshots
+<!-- Add all the screenshots which support your changes -->
+
+## Note to reviewers
+<!-- Add notes to reviewers if applicable -->
+
+
+<!-- --------------- -->
 <!-- Mark all the applicable boxes. To mark the box as done follow the following conventions -->
 <!--
 Correct ways to mark a box:
@@ -15,10 +23,13 @@ Correct ways to mark a box:
 
 Incorrect ways to mark a box:
 [ ] - Incorrect; marked as not done
-[x ] - Incorrect; marked as done
-[ x ] - Incorrect; marked as done
-[ x] - Incorrect; marked as done
+[x ] - Incorrect;
+[ x ] - Incorrect;
+[ x] - Incorrect;
 -->
+
+## Code of Conduct
+- [ ] By submitting this pull request, I confirm I've read and complied with the [CoC](https://github.com/CryptoverseWeb3/Support/blob/main/CODE_OF_CONDUCT.md) 🖖
 
 ## Check List (Check all the applicable boxes) <!-- Follow the above conventions to check the box -->
 - [ ] My code follows the code style of this project.
@@ -28,8 +39,8 @@ Incorrect ways to mark a box:
 - [ ] This PR does not contain plagiarized content.
 - [ ] The title of my pull request is a short description of the requested changes.
 
-## Screenshots
-<!-- Add all the screenshots which support your changes -->
+---
 
-## Note to reviewers
-<!-- Add notes to reviewers if applicable -->
+You can also join our [Discord](https://discord.gg/WhDry9FWE7) community. <br>
+Feel free to check out other cool repositories of the [Cryptoverse Web3](https://github.com/CryptoverseWeb3). <br>
+Join the Cryptoverse Web3 GitHub Organisation by raising an [issue](https://github.com/CryptoverseWeb3/Support/issues/new?assignees=&labels=invite+me+to+the+organisation&template=invitation.yml&title=Please+invite+me+to+the+GitHub+Community+Organization) (you will be sent an invitation).

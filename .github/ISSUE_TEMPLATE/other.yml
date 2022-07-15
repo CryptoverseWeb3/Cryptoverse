@@ -1,39 +1,23 @@
-name: Feature request
-description: Suggest features, propose improvements, discuss new ideas
-title: "[FEATURE] <description>"
-labels: [enhancement]
+name: Other
+description: Use this for any other issues. PLEASE do not create blank issues
+title: "[OTHER]"
+labels: [triage]
 body:
   - type: markdown
     attributes:
-      value: Provide a general summary of the issue in the title above
+      value: "# Other issue"
   - type: textarea
-    id: description
+    id: issuedescription
     attributes:
-      label: Detailed description
-      description: Provide a detailed description of the change or addition you are proposing
+      label: What would you like to share?
+      description: Provide a clear and concise explanation of your issue.
     validations:
       required: true
   - type: textarea
-    id: context
-    attributes:
-      label: Context
-      description: |
-        Why is this change important to you? How would you use it?
-        How can it benefit other users?
-    validations:
-      required: true
-  - type: textarea
-    id: possibleimpl
-    attributes:
-      label: Possible implementation
-      description: Not obligatory, but suggest an idea for implementing addition or change
-    validations:
-      required: false
-  - type: textarea
-    id: extrainformation
+    id: extrainfo
     attributes:
       label: Additional information
-      description: Is there anything else we should know about this feature?
+      description: Is there anything else we should know about this issue?
     validations:
       required: false
   - type: checkboxes
@@ -51,3 +35,4 @@ body:
         You can also join our [Discord](https://discord.gg/WhDry9FWE7) community.
         Feel free to check out other cool repositories of the [Cryptoverse Web3](https://github.com/CryptoverseWeb3).
         Join the Cryptoverse Web3 GitHub Organisation by raising an [issue](https://github.com/CryptoverseWeb3/Support/issues/new?assignees=&labels=invite+me+to+the+organisation&template=invitation.yml&title=Please+invite+me+to+the+GitHub+Community+Organization) (you will be sent an invitation).
+
