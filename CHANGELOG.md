@@ -1,3 +1,12 @@
+## [0.4.7](https://github.com/CryptoverseWeb3/Cryptoverse/compare/v0.4.6...v0.4.7) (2022-07-16)
+
+
+### Bug Fixes
+
+* Social Links ([#31](https://github.com/CryptoverseWeb3/Cryptoverse/issues/31)) ([#39](https://github.com/CryptoverseWeb3/Cryptoverse/issues/39)) ([6b31abc](https://github.com/CryptoverseWeb3/Cryptoverse/commit/6b31abcf5d3e0cacbec40321d0ebb6bed13d984b))
+
+
+
 ## [0.4.6](https://github.com/CryptoverseWeb3/Cryptoverse/compare/v0.4.5...v0.4.6) (2022-07-15)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * Improve pull_request_template.md ([3b69257](https://github.com/CryptoverseWeb3/Cryptoverse/commit/3b6925757779a21e4da7d33baa66bc4f56d39af9))
-
-
-
-# [0.3.0](https://github.com/CryptoverseWeb3/Cryptoverse/compare/v0.2.0...v0.3.0) (2022-07-12)
-
-
-### Features
-
-* Improve README.md ([0d6d755](https://github.com/CryptoverseWeb3/Cryptoverse/commit/0d6d755d92ea824e177cab1d79b4facd45c999dd))
 
 
 
