@@ -7,12 +7,12 @@
 
 ---
 
+![image](https://user-images.githubusercontent.com/44284877/178079891-b8faba2f-bb52-4803-b663-f217feea68ad.png)
+
 <p align="center">
     👨‍💻 Website link:
     <a href="https://cryptoverseweb3.github.io/Cryptoverse/"> Cryptoverse </a>
 </p>
-
-![image](https://user-images.githubusercontent.com/44284877/178079891-b8faba2f-bb52-4803-b663-f217feea68ad.png)
 
 ---
 
