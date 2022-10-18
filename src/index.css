@@ -204,7 +204,11 @@ a:hover {
 
 .routes {
   padding: 25px;
-  min-height: 75vh
+  min-height: 75vh;
+  background-image: url('./images/cool-background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 .nav-container {
